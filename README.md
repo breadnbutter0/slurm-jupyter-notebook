@@ -17,9 +17,9 @@ cd slurm-jupyter-notebook
 Set aliases for the easier implementation
 
 ```bash
-echo alias startjn="sbatch $(pwd)/repeat_jupyter.sh" >> ~/.bashrc
-echo alias jnurl="python $(pwd)/jupyter_url.py" >> ~/.bashrc
-echo alias jnlog="code $(pwd)/jupyter.log" >> ~/.bashrc
+echo alias startjn="'sbatch $(pwd)/repeat_jupyter.sh'" >> ~/.bashrc
+echo alias jnurl="'python $(pwd)/jupyter_url.py'" >> ~/.bashrc
+echo alias jnlog="'code $(pwd)/jupyter.log'" >> ~/.bashrc
 ```
 
 Source baschrc file
