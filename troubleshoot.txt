@@ -1,2 +1,6 @@
-1. If you get an 403 forbidden error in jupyter.log, simply restart your visual studio code.
+1. If you get an 403 forbidden error in jupyter.log, simply reload your visual studio code window.
+
+    Ctrl + Shift + p 
+    Developer: Reload Window
+
 2. If you get an binding error in your local terminal, use another port to start the jupyter notebook.
