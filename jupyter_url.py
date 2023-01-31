@@ -1,11 +1,8 @@
-import sys
 import os
 
-pwd = os.getcwd()
-sys.path.append(pwd)
-
+file_dir = os.path.dirname(os.path.realpath(__file__))
 #%%
-with open('./jupyter.log') as f:
+with open("{}/jupyter.log".format(file_dir)) as f:
     lines=f.readlines()
     
 hostname = lines[6][:-1]
