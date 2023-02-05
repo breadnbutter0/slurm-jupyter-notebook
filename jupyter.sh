@@ -50,6 +50,6 @@ echo "==========================================================================
 
 
 module load anaconda
-jupyter notebook --no-browser --ip=$(hostname -s) --port=8081
+jupyter notebook --no-browser --ip=$(hostname -s) --port=8081 --notebook-dir=~/
 
 
