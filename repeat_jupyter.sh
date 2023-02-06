@@ -4,8 +4,8 @@
 #SBATCH --gpus=1
 #SBATCH --output=./repeat_jupyter.log
 
-sbatch ./jupyter.sh
+sbatch $JNPATH/jupyter.sh
 
 sleep 3h 55m
 
-sbatch ./repeat_jupyter.sh
+sbatch $JNPATH/repeat_jupyter.sh

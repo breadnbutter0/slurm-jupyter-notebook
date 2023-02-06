@@ -14,6 +14,12 @@ Change directory to the repository
 cd slurm-jupyter-notebook
 ```
 
+Export jupyter notebook path to bashrc
+
+```bash
+echo export JNPATH="$(pwd)" >> ~/.bashrc
+```
+
 Set aliases for the easier implementation
 
 ```bash
