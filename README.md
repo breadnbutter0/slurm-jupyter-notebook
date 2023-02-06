@@ -23,9 +23,9 @@ echo export JNPATH="$(pwd)" >> ~/.bashrc
 Set aliases for the easier implementation
 
 ```bash
-echo alias startjn="'sbatch $(pwd)/repeat_jupyter.sh'" >> ~/.bashrc
-echo alias jnurl="'python $(pwd)/jupyter_url.py'" >> ~/.bashrc
-echo alias jnlog="'code $(pwd)/jupyter.log'" >> ~/.bashrc
+echo alias startjn="'cd ${JNPATH} && sbatch ${JNPATH}/repeat_jupyter.sh'" >> ~/.bashrc
+echo alias jnurl="'python ${JNPATH}/jupyter_url.py'" >> ~/.bashrc
+echo alias jnlog="'code ${JNPATH}/jupyter.log'" >> ~/.bashrc
 ```
 
 Source baschrc file
