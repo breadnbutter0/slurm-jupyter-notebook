@@ -20,6 +20,10 @@ Export jupyter notebook path to bashrc
 echo export JNPATH="$(pwd)" >> ~/.bashrc
 ```
 
+```bash
+source ~/.bashrc
+```
+
 Set aliases for the easier implementation
 
 ```bash
@@ -27,8 +31,6 @@ echo alias startjn="'cd ${JNPATH} && sbatch ${JNPATH}/repeat_jupyter.sh'" >> ~/.
 echo alias jnurl="'python ${JNPATH}/jupyter_url.py'" >> ~/.bashrc
 echo alias jnlog="'code ${JNPATH}/jupyter.log'" >> ~/.bashrc
 ```
-
-Source baschrc file
 
 ```bash
 source ~/.bashrc
