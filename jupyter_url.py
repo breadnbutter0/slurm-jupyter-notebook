@@ -25,7 +25,7 @@ try:
 
     print("="*100)
     print("Run this command on your local terminal:")
-    print("ssh -N -L{}:{}:{} {}@gilbreth.purdue.edu".format(port,host_ip_address,port,user_name))
+    print("ssh -N -L{}:{}:{} {}@gilbreth.rcac.purdue.edu".format(port,host_ip_address,port,user_name))
     print("="*100)
     print("Jupyter local url:")
     print(jupyter_local_url)
