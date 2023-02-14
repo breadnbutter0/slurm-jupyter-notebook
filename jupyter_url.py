@@ -20,14 +20,12 @@ try:
         except:
             pass
         
-    #%%
-    ssh_command = lines[12].split(':')
-    ssh_command[1] = host_ip_address
-
+    port = jupyter_local_url.split(':')[2].split('/')[0]
+    user_name = lines[0].split(':')[1][1:-1]
 
     print("="*100)
     print("Run this command on your local terminal:")
-    print(':'.join(ssh_command)[12:-1])
+    print("ssh -N -L{}:{}:{} {}@gilbreth.purdue.edu".format(port,host_ip_address,port,user_name))
     print("="*100)
     print("Jupyter local url:")
     print(jupyter_local_url)

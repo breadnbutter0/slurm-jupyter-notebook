@@ -8,7 +8,7 @@
 #SBATCH --constraint=B  # specifying gilbreth node B uses NVIDIA A30
 #SBATCH --output=./jupyter.log
 
-echo ""
+echo "USER: "$USER""
 echo "==========================================================================="
 echo "To access via your local machine"
 echo ""
